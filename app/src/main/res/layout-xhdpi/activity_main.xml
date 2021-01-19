@@ -9,10 +9,16 @@
 
     <com.denzcoskun.imageslider.ImageSlider
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="130dp"
         app:auto_cycle="true"
         app:period="1000"
         android:id="@+id/imageeslider"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ajsfadhfdjfdhhf"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"/>
 
@@ -23,15 +29,15 @@
         android:layout_height="wrap_content"
         android:id="@+id/g1"
         android:orientation="vertical"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="90dp"
         app:layout_constraintEnd_toStartOf="@id/g2"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent">
         <ImageView
             android:layout_width="100dp"
-            android:layout_height="90dp"
-            android:id="@+id/iv1"
+            android:layout_height="100dp"
             android:scaleType="fitXY"
+            android:id="@+id/iv1"
             android:src="@drawable/one"
             />
         <TextView android:layout_height="match_parent"
@@ -52,9 +58,10 @@
         app:layout_constraintEnd_toEndOf="parent">
         <ImageView
             android:layout_width="100dp"
-            android:layout_height="90dp"
+            android:layout_height="100dp"
             android:id="@+id/iv2"
             android:scaleType="fitXY"
+
             android:src="@drawable/one"
             />
         <TextView android:layout_height="match_parent"
@@ -63,7 +70,6 @@
 
 
     </GridLayout>
-
     <GridLayout
         android:layout_width="100dp"
         android:layout_height="wrap_content"
@@ -75,8 +81,10 @@
         app:layout_constraintStart_toStartOf="parent">
         <ImageView
             android:layout_width="100dp"
-            android:layout_height="90dp"
+            android:layout_height="100dp"
             android:id="@+id/iv3"
+            android:scaleType="fitXY"
+
             android:src="@drawable/two"
             />
         <TextView android:layout_height="match_parent"
@@ -96,7 +104,9 @@
         app:layout_constraintStart_toEndOf="@id/g3">
         <ImageView
             android:layout_width="100dp"
-            android:layout_height="90dp"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+
             android:id="@+id/iv4"
             android:src="@drawable/three"
             />
@@ -118,8 +128,10 @@
         app:layout_constraintStart_toStartOf="parent">
         <ImageView
             android:layout_width="100dp"
-            android:layout_height="90dp"
+            android:layout_height="100dp"
             android:id="@+id/iv5"
+            android:scaleType="fitXY"
+
             android:src="@drawable/iv"
             />
         <TextView android:layout_height="match_parent"
@@ -139,8 +151,10 @@
         app:layout_constraintStart_toEndOf="@id/g5">
         <ImageView
             android:layout_width="100dp"
-            android:layout_height="90dp"
+            android:layout_height="100dp"
             android:id="@+id/iv6"
+            android:scaleType="fitXY"
+
             android:src="@drawable/v"
             />
         <TextView android:layout_height="match_parent"
@@ -162,8 +176,10 @@
         app:layout_constraintStart_toStartOf="parent">
         <ImageView
             android:layout_width="100dp"
-            android:layout_height="90dp"
+            android:layout_height="100dp"
             android:id="@+id/iv7"
+            android:scaleType="fitXY"
+
             android:src="@drawable/two"
             />
         <TextView android:layout_height="match_parent"
@@ -183,8 +199,9 @@
         app:layout_constraintStart_toEndOf="@id/g7">
         <ImageView
             android:layout_width="100dp"
-            android:layout_height="90dp"
+            android:layout_height="100dp"
             android:id="@+id/iv8"
+            android:scaleType="fitXY"
             android:src="@drawable/two"
             />
         <TextView android:layout_height="match_parent"
@@ -193,5 +210,7 @@
 
 
     </GridLayout>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
